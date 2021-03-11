@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="Centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_E_Achats">
+    <property name="title">
+     <string>E_Achats</string>
+    </property>
+    <addaction name="actionEnt_cmd"/>
+    <addaction name="actionDet_cmd"/>
+   </widget>
+   <widget class="QMenu" name="menu_Referencement">
+    <property name="title">
+     <string>Referencement</string>
+    </property>
+    <addaction name="actionT_frns"/>
+    <addaction name="actionT_produits"/>
+   </widget>
+   <widget class="QMenu" name="menu_E_Achats">
+    <property name="title">
+     <string>E_Achats</string>
+    </property>
+    <addaction name="actionCmd_hist"/>
+   </widget>
+   <addaction name="menu_E_Achats"/>
+   <addaction name="menu_Referencement"/>
+   <addaction name="menu_E_Achats"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEnt_cmd" > "
+   <property name="text">
+    <string>Ent_cmd</string>
+   </property>
+  </action>
+  <action name="actionDet_cmd" > "
+   <property name="text">
+    <string>Det_cmd</string>
+   </property>
+  </action>
+  <action name="actionT_frns" > "
+   <property name="text">
+    <string>T_frns</string>
+   </property>
+  </action>
+  <action name="actionT_produits" > "
+   <property name="text">
+    <string>T_produits</string>
+   </property>
+  </action>
+  <action name="actionCmd_hist" > "
+   <property name="text">
+    <string>Cmd_hist</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

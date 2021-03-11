@@ -1,0 +1,5 @@
+on a la fonction d'impression pour les html
+->il faut passe juste les colonnes et les lines d'enregistrement pour créer une copie de html
+->utilisation de **dict pour extender le contenue du dectionnaire
+->unifier la fonction d'impression pour qu'il soit une seul fonction qui imprime html pour n'importe qu'elle feuille
+->revoire testPrintJinja et testTemplate

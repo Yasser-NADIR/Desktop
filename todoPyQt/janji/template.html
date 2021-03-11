@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1 style="text-align: center; background-color: grey;">{{socityName}}</h1>
+<p>code commande: <span>{{codeCMD}}</span></p>
+<p>ref marche: <span> {{refMarche}} </span> </p>
+<p>code fournisseur: <span> {{codeFrns}} </span> </p>
+<p>code société: <span> {{codeSociete}} </span> </p>
+<p>date commande: <span> {{dateCmd}} </span> </p>
+<p>flag: <span> {{flag}} </span> </p>
+<p>remarque: <span> {{remarque}} </span> </p>
+<table border=1 style="border-collapse: collapse;">
+	<thead>
+		<td>id commande</td>
+		<td>ref produit</td>
+		<td>quantité</td>
+		<td>prix unite</td>
+		<td>date livraison</td>
+		<td>code unité</td>
+		<td>prix global</td>
+		<td>remarque</td>
+	</thead>
+	{%  for row in table %}
+		<tr>
+			{% for string in row %}
+			<td> <b>{{string}}</b> </td>
+			{% endfor %}
+		</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

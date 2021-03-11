@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1577541597 source:c:\users\cozmet\desktop\projet json\json-c\main.c
+	"json.h"
+
+1577540862 c:\users\cozmet\desktop\projet json\json-c\json.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+
+1577541951 source:c:\users\cozmet\desktop\projet json\json-c\json.c
+	"json.h"
+

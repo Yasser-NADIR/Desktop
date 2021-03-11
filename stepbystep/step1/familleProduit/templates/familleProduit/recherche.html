@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rechercher</title>
+</head>
+<body>
+	<form method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="recherche" name="">
+	</form>
+	<table border="1">
+		{% for fp in fp_all %}
+		<tr>
+			<th>nom:</th>
+			<td>{{fp.nomFamilleProduit}}</td>
+			<br>
+			<th>remarque:</th>
+			<td>{{fp.remarque}}</td>
+			<th>image:</th>
+			<td>
+				<img src="{{fp.image.url}}">
+			</td>
+			<td>
+				<a href="{% url 'familleProduit:famillePoduit_supp' fp.id %}">supprimer</a>
+				<a href="{% url 'familleProduit:famillePoduit_modifie' fp.id %}">modifier</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<a href="{% url 'familleProduit:familleProduit_ajout' %}">ajouter</a>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FounisseurAfficherWidget</class>
+ <widget class="QWidget" name="FounisseurAfficherWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FournisseurAfficherWidget</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>597</width>
+     <height>413</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Num Fournisseuri</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nom Fourn</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Num Fournisseur</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Registre de commerce</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Telephone</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fax</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>C Corespondance</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Site Web</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fichier</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Adresse Banque</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Compte B</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Adresse Fournisseur</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Adresse</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Adresse 1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Remarque 1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Remarque 2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Flag</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

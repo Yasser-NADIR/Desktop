@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>supprimer produit</title>
+</head>
+<body>
+	<form method="post">
+		{% csrf_token %}
+		<table border="1">
+			<tr>
+				<th>nom produit</th>
+				<td>{{ produit.nomProduit }}</td>
+			</tr>
+			<tr>
+				<th>prix produit</th>
+				<td>{{ produit.prixProduit }}</td>
+			</tr>
+			<tr>
+				<th>qte produit</th>
+				<td>{{ produit.qteProduit }}</td>
+			</tr>
+		</table>
+		<input type="submit" value="supprimer" name="">
+	</form>
+</body>
+</html>

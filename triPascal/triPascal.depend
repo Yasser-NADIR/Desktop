@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1610104053 source:c:\users\cozmet\desktop\tripascal\main.c
+	<stdio.h>
+	<stdlib.h>
+

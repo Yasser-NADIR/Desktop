@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajouter un produit</title>
+</head>
+<body>
+	<form method='post'>
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="ajouter" name="">
+	</form>
+	<a href="{% url 'familleProduit:produit_recherche' %}">rechercher</a>
+</body>
+</html>

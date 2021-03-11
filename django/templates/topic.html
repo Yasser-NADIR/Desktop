@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block title%}{{board.name}}{%endblock%}
+
+{%block breadcrumb%}
+<li class="breadcrumb-item"><a href="{%url 'home'%}">Board</a></li>
+<li class="breadcrumb-item active">{{board.name}}</li>
+{%endblock%}
+
+
+
+{%block container%}
+<table class="table">
+	<thead class="thead-dark">
+		<tr>
+			<th>Topic</th>
+			<th>Create by</th>
+			<th>Post</th>
+			<th>Views</th>
+			<th>Create dt</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%for topic in board.topic.all%}
+		<tr>
+			<td>{{topic.subject}}</td>
+			<td>{{topic.created_by.username}}</td>
+			<td>0</td>
+			<td>0</td>
+			<td>{{topic.created_dt}}</td>
+		</tr>
+		{%endfor%}
+	</tbody>
+</table>
+<a class="float-right" href="{%url 'new_topic' board.pk%}">create a new post</a>
+{%endblock%}

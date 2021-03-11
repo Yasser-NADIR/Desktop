@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>supprimer famille produit</title>
+</head>
+<body>
+	<form method="post"> 
+		{% csrf_token %}
+		<table border="1">
+			<tr>
+				<th>nom:</th>
+				<td>{{fp.nomFamilleProduit}}</td>
+			</tr>
+			<tr>
+				<th>remarque:</th>
+				<td>{{fp.remarque}}</td>
+			</tr>
+		</table>
+		<input type="submit" value="supprimer" name="">
+	</form>
+	<a href="{% url 'familleProduit:familleProduit_ajout' %}">ajouter</a>
+	<a href="{% url 'familleProduit:familleProduit_recherche' %}">rechercher</a>
+</body>
+</html>

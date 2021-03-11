@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<head style="text-align: center; font-size: 20px;">{{title}}</head>
+	<table border="1" style="border-collapse: collapse;">
+		<thead>
+			{% for column in columns %}
+			<td>{{column}}</td>
+			{% endfor%}
+		</thead>
+	{% for content in contents %}
+	<tr>
+		{% for data in content %}
+		<td>{{data}}</td>
+		{% endfor%}
+	</tr>
+	{% endfor %}
+	</table>
+	<footer style="text-align: right;">1/1</footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{% for content in contents %}
+	{% for i in range(len(content))%}
+		<p>{{columns[i]}}: {{content[i]}}</p>
+	{% endfor %}
+{% endfor %}
+</body>
+</html>

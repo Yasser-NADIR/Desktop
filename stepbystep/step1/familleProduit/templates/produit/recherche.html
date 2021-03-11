@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rechercher produit</title>
+</head>
+<body>
+	<form method='post'>
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="rechercher" name="">
+	</form>
+
+	<table border="1">
+		{% for p in p_all %}
+		<tr>
+			<th>nom produit</th>
+			<td>{{ p.nomProduit }}</td>
+		</tr>
+		<tr>
+			<th>prix produit</th>
+			<td>{{ p.prixProduit }}</td>
+		</tr>
+		<tr>
+			<th>qte produit</th>
+			<td>{{ p.qteProduit }}</td>
+		</tr>
+		<tr>
+			<th>nom famille produit</th>
+			<td>{{ p.familleProduit.nomFamilleProduit }}</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="{% url 'familleProduit:produit_supp' p.id %}">supprimer</a>
+			</td>
+			<td>
+				<a href="">modifier</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+	<a href="{% url 'familleProduit:produit_ajout' %}">ajouter</a>
+</body>
+</html>

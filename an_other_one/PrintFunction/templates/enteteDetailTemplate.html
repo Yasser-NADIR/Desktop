@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>entete detail</title>
+</head>
+<body>
+<p>code commande: {{codecommande}}</p>
+<p>code fournisseur: {{codefournisseur}}</p>
+<p>date commande: {{datecommande}}</p>
+<table>
+	<thead>
+		<td>id commande</td>
+		<td>ref produit</td>
+		<td>prix unitaire</td>
+		<td>quantité </td>
+		<td>prix global</td>
+		<td>date livraison</td>
+	</thead>
+	{% for row in rows %}
+	<tr>
+		{% for data in row %}
+		<td>{{data}}</td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

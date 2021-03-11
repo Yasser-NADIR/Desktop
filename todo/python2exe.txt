@@ -1,0 +1,3 @@
+pyinstaller : 
+	pyinstaller --noconsole --onefile --i="icon.ico" app.py
+	Have some problem whene I change the icon of the App

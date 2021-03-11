@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App</string>
+  </property>
+  <widget class="QWidget" name="widgetCentral">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu1">
+    <property name="title">
+     <string>Menu1</string>
+    </property>
+    <addaction name="actionFournisseur"/>
+    <addaction name="actionFamilleProduit"/>
+    <addaction name="actionProduit"/>
+    <addaction name="actionEntete_Detail"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuMenu1"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFournisseur">
+   <property name="text">
+    <string>Fournisseur</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actiontest">
+   <property name="text">
+    <string>test</string>
+   </property>
+  </action>
+  <action name="actionFamilleProduit">
+   <property name="text">
+    <string>FamilleProduit</string>
+   </property>
+  </action>
+  <action name="actionProduit">
+   <property name="text">
+    <string>Produit</string>
+   </property>
+  </action>
+  <action name="actionEntete_Detail">
+   <property name="text">
+    <string>EnteteDetail</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

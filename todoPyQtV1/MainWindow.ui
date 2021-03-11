@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCreation">
+    <property name="title">
+     <string>Creation</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuR_Achat">
+    <property name="title">
+     <string>R_Achat</string>
+    </property>
+    <addaction name="actionFournisseur"/>
+    <addaction name="actionUnite"/>
+    <addaction name="actionStatus"/>
+    <addaction name="actionFamille_Produit"/>
+    <addaction name="actionProduit"/>
+    <addaction name="actionCatalogue"/>
+   </widget>
+   <widget class="QMenu" name="menuR_Vente">
+    <property name="title">
+     <string>R_Vente</string>
+    </property>
+    <addaction name="actionClient"/>
+    <addaction name="actionFamille"/>
+   </widget>
+   <addaction name="menuCreation"/>
+   <addaction name="menuR_Achat"/>
+   <addaction name="menuR_Vente"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFournisseur">
+   <property name="text">
+    <string>Fournisseur</string>
+   </property>
+  </action>
+  <action name="actionUnite">
+   <property name="text">
+    <string>Unite</string>
+   </property>
+  </action>
+  <action name="actionStatus">
+   <property name="text">
+    <string>Status</string>
+   </property>
+  </action>
+  <action name="actionFamille_Produit">
+   <property name="text">
+    <string>Famille Produit</string>
+   </property>
+  </action>
+  <action name="actionProduit">
+   <property name="text">
+    <string>Produit</string>
+   </property>
+  </action>
+  <action name="actionCatalogue">
+   <property name="text">
+    <string>Catalogue</string>
+   </property>
+  </action>
+  <action name="actionClient">
+   <property name="text">
+    <string>Client</string>
+   </property>
+  </action>
+  <action name="actionFamille">
+   <property name="text">
+    <string>Famille</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
